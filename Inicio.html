@@ -5,14 +5,23 @@
 	<meta charset="utf-8">
 	<title>Inicio</title>
 	<link href="Inicio.css" rel="stylesheet" type="text/css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	  <style>
+	  body {
+		  font: 20px Montserrat, sans-serif;
+		  line-height: 1.8;
+		  color: #f5f6f7;
+		  background: #E3CDCD;
+	  }
+   </style>
 	
 </head>
 	
-<body>
+<body class="align">
 	
 	<nav class="navbar" style="background-color: #EE80AA;">
 		<div class="container-fluid">
@@ -43,5 +52,40 @@
 	</nav>
 	
 
+	<!-- First Container -->
+<div class="container-fluid text-center">
+  <h3 class="margin">Bienvenido Usuario</h3>
+  <img src="Logo.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="250" height="250">
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">¿Qué puedes hacer?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Puedes incluir nuevos usuarios.</p>
+		<br>
+      <img src="Incluir.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="150" height="150">
+		<form action="Login.html" method="POST" class="form login">
+		<div class="form__field" align="center">
+			<input type="submit" value="Incluir">
+        </div>
+		</form>
+    </div>
+    <div class="col-sm-4"> 
+      <p>Puedes consultar tus productos, tus ordenes producción al igual que tus oredenes de compras.</p>
+      <img src="Consultar.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="150" height="150">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Puedes registrar la finalización de tus ordenes de producción y compra.</p>
+      <img src="Finalizar.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="150" height="150">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Sistema Hecho Por <a href="https://www.facebook.com/EcoTecnoDCyt/">ECOTECNO</a></p> 
+</footer>
 </body>
 </html>
