@@ -205,7 +205,7 @@ p {
 .login2 {
   width: 900px;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   margin: -200px 0px 0px -200px;
   background: rgba(0,0,0,0.2);
