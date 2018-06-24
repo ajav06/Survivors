@@ -69,19 +69,6 @@ html {
   height: 100%;
 }
 
-body {
-  background-color: #E3CDCD;
-  color: #606468;
-		  font: 20px Montserrat, sans-serif;
-		  line-height: 1.8;
-  font-size: 0.875rem;
-  font-weight: 400;
-  height: 100%;
-  line-height: 1.5;
-  margin: 0;
-  min-height: 100%;
-}
-
 /* modules/anchor.css */
 
 a {
@@ -200,6 +187,7 @@ p {
 
 .text--center {
   text-align: center;
+	color: aliceblue;
 }
 
 .login2 {
@@ -224,3 +212,4 @@ img {
     border-radius: 50%;
     background-size: 100% auto;
 }
+

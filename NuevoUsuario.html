@@ -4,21 +4,65 @@
 	<meta charset="utf-8">
 	<title>NuevoUsuario</title>
 	<link href="NuevoUsuario.css" rel="stylesheet" type="text/css">
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+	
+	<style>
+
+		body {
+		  font: 20px Montserrat, sans-serif;
+		  line-height: 1.8;
+		  color: #555555;
+		  background: #E3CDCD;
+		}
+
+	</style>
 </head>
 
-<body class="align">
+
+	
+<body>
+	
+	<nav class="navbar" style="background-color: #EE80AA;">
+			<a class="navbar-brand" href="#">
+    			<img src="Logo.jpg" alt="Logo" style="width:35px;" class="img-responsive img-circle margin">
+  			</a>
+		<div class="container-fluid">
+
+		<div class="navbar-header">
+		  <a class="navbar-brand" href="#">Torontella Cake & Coffe</a>
+		</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="Inicio.html">Inicio</a></li>
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Consultar<span class="caret"></span></a>
+					<ul class="dropdown-menu" style="background-color: #EE80AA;">
+						<li><a href="#">Productos</a></li>
+						<li><a href="#">Órdenes de Producción</a></li>
+						<li><a href="#">Órdenes de Compras</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Registrar Finalización<span class="caret"></span></a>
+					<ul class="dropdown-menu" style="background-color: #EE80AA;">
+						<li><a href="#">Órdenes de Producción</a></li>
+						<li><a href="#">Órdenes de Compras</a></li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="Login.html"><span class="glyphicon glyphicon-user"></span> Cerrar Sesión</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<div class="col-lg-3 login2" >
 		
-<div class="grid login2" >
-		
-		<div align="center">
-			<img src="Logo.jpg">
-			<br>
+		<div align="center" style="color:#555555;">
+		  <h3>Incluir Usuario</h3>
+		  <br>
 		</div>
       <form action="Inicio.html" method="POST" class="form login">
 
@@ -37,16 +81,16 @@
           <input id="login__password" type="password" name="password" class="form__input" placeholder="Confirme contraseña" required>
         </div>
 		  
-		  <br>
+	
 		<div align="center">
-			  
+			 <label class="radio-inline">
+			  <input type="radio" name="optradio"> Socia</label> 
 			<label class="radio-inline">
-			  <input type="radio" name="optradio"> Socia 
-			  <input type="radio" name="optradio"> Cocinera 
-			  <input type="radio" name="optradio"> Encargada 
-			</label>
+			  <input type="radio" name="optradio"> Cocinera</label>
+			<label class="radio-inline">
+			  <input type="radio" name="optradio"> Encargada </label>
 	  </div>
-		  <br>
+
 		<div class="form__field">
           <label for="login__text"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg><span class="hidden">Text</span></label>
           <input id="login__text" type="text" name="text" class="form__input" placeholder="Pregunta de Seguridad" required>
