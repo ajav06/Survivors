@@ -189,10 +189,10 @@ p {
 }
 
 .login2 {
-  width: 350px;
+  width: 200px;
   position: absolute;
   top: 50%;
-  left: 55%;
+  left: 50%;
   margin: 00px 0px 0px -200px;
   background: rgba(0,0,0,0.2);
   padding: 20px 20px;

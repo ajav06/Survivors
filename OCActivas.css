@@ -50,12 +50,6 @@ html {
       background-color: #2f2f2f; /* Black Gray */
       color: #fff;
   }
-  .bg-5 {
-      background-color: #ff87a5;
-      color: #fff;
-      text-align: right;
-      font-size: 14px;
-  }
 
 .btn-lg{
 	border-radius: 60px 60px 60px 60px;
@@ -66,58 +60,60 @@ color: #000000;
 	background: #EE80AA;
 }
 
-.btn-lg:hover{
-  border-radius: 60px 60px 60px 60px;
--moz-border-radius: 60px 60px 60px 60px;
--webkit-border-radius: 60px 60px 60px 60px;
+.boton{
+  border-radius: 20px 20px 20px 20px;
+-moz-border-radius: 20px 20px 20px 20px;
+-webkit-border-radius: 20px 20px 20px 20px;
 border: 0px solid #000000;
 color: #000000;
-  background: #D44179;
+  background: #ffb5a3;
 }
 
-.botonbuscar{
-  border-radius: 60px 60px 60px 60px;
--moz-border-radius: 60px 60px 60px 60px;
--webkit-border-radius: 60px 60px 60px 60px;
+.boton:hover{
+  border-radius: 20px 20px 20px 20px;
+-moz-border-radius: 20px 20px 20px 20px;
+-webkit-border-radius: 20px 20px 20px 20px;
 border: 0px solid #000000;
 color: #000000;
   background: #EE80AA;
 }
 
-.botonbuscar:hover{
-  border-radius: 60px 60px 60px 60px;
--moz-border-radius: 60px 60px 60px 60px;
--webkit-border-radius: 60px 60px 60px 60px;
-border: 0px solid #000000;
-color: #000000;
-  background: #D44179;
+/*Tablas OPActivas*/
+table{
+    border-collapse:none;
+    width: 694px;
+    height: auto;
 }
 
-.divider2 {
-    background-color: black;
+td{
+    border: 1px solid rgba(74, 71, 71, 0.38);
+    text-align: center;
+    color: white;
 }
 
-.cajabotones {
-    font-size: 18px;
-    color: #2f2f2f;
+#cabecera>td{
+    background-color: #EE80AA;
+    border-color: black;
 }
 
-.nronotificaciones{
-  border-radius: 60px 60px 60px 60px;
-border: 1px solid red;
-color: #FFF;
-  background: red;
-  font: 12px Montserrat, sans-serif;
+/*tr:hover{
+ background-color: #b44f76;
+}*/
 
+#separador{
+    height: 20px;
 }
 
-.float-disable{
-   float: none;
-   display: inline-block;
+button{
+    background-color: #453f3f;
 }
 
-.vcenter{
-   vertical-align: middle;
-   margin-top: 7px;
+#fondotabla{
+    width: 700px;
+    background-color: #F79285;
+    height: 400px;
+    margin: auto;
+    border-style: double;
+    overflow: auto;
+    border: 1px solid rgba(74, 71, 71, 0.38);
 }
-
