@@ -32,65 +32,75 @@ html {
 .login input[type='submit']:hover {
   background-color: #D44179;
 }
- p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
-      background-color: #1abc9c; /* Green */
-      color: #555555;
-  }
-  .bg-2 { 
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
-  }
-  .bg-3 { 
-      background-color: #F79285; /* White */
-      color: #555555;
-  }
-  .bg-4 { 
-      background-color: #2f2f2f; /* Black Gray */
-      color: #fff;
-  }
-  .bg-5 {
-      background-color: #ff87a5;
-      color: #fff;
-      text-align: right;
-      font-size: 14px;
-  }
+
+p {font-size: 16px;}
+  .margin {margin-bottom: 45px;
+}
+
+.bg-1 { 
+   background-color: #1abc9c; /* Green */
+   color: #555555;
+}
+.bg-2 { 
+   background-color: #474e5d; /* Dark Blue */
+   color: #ffffff;
+}
+.bg-3 { 
+   background-color: #F79285; /* White */
+   color: #555555;
+}
+.bg-4 { 
+   background-color: #2f2f2f; /* Black Gray */
+   color: #fff;
+}
+.bg-5 {
+   background-color: #ff87a5;
+   color: #fff;
+   text-align: right;
+   font-size: 14px;
+}
+
+.bg-6 {
+   background-color: #EE80AA;
+   color: #ED0A0E;
+   font: 20px Montserrat, sans-serif;
+   text-align: center;
+}
 
 .btn-lg{
 	border-radius: 60px 60px 60px 60px;
--moz-border-radius: 60px 60px 60px 60px;
--webkit-border-radius: 60px 60px 60px 60px;
-border: 0px solid #000000;
-color: #000000;
+	-moz-border-radius: 60px 60px 60px 60px;
+	-webkit-border-radius: 60px 60px 60px 60px;
+	border: 0px solid #000000;
+	color: #000000;
 	background: #EE80AA;
 }
 
 .btn-lg:hover{
-  border-radius: 60px 60px 60px 60px;
--moz-border-radius: 60px 60px 60px 60px;
--webkit-border-radius: 60px 60px 60px 60px;
-border: 0px solid #000000;
-color: #000000;
-  background: #D44179;
+	border-radius: 60px 60px 60px 60px;
+	-moz-border-radius: 60px 60px 60px 60px;
+	-webkit-border-radius: 60px 60px 60px 60px;
+	border: 0px solid #000000;
+	color: #000000;
+	background: #D44179;
 }
 
 .botonbuscar{
-  border-radius: 60px 60px 60px 60px;
--moz-border-radius: 60px 60px 60px 60px;
--webkit-border-radius: 60px 60px 60px 60px;
-border: 0px solid #000000;
-color: #000000;
-  background: #EE80AA;
+	border-radius: 60px 60px 60px 60px;
+	-moz-border-radius: 60px 60px 60px 60px;
+	-webkit-border-radius: 60px 60px 60px 60px;
+	border: 0px solid #000000;
+	color: #000000;
+	background: #EE80AA;
 }
 
 .botonbuscar:hover{
-  border-radius: 60px 60px 60px 60px;
--moz-border-radius: 60px 60px 60px 60px;
--webkit-border-radius: 60px 60px 60px 60px;
-border: 0px solid #000000;
-color: #000000;
-  background: #D44179;
+	border-radius: 60px 60px 60px 60px;
+	-moz-border-radius: 60px 60px 60px 60px;
+	-webkit-border-radius: 60px 60px 60px 60px;
+	border: 0px solid #000000;
+	color: #000000;
+	background: #D44179;
 }
 
 .divider2 {
@@ -103,12 +113,11 @@ color: #000000;
 }
 
 .nronotificaciones{
-  border-radius: 60px 60px 60px 60px;
-border: 1px solid red;
-color: #FFF;
-  background: red;
-  font: 12px Montserrat, sans-serif;
-
+	border-radius: 60px 60px 60px 60px;
+	border: 1px solid red;
+	color: #FFF;
+	background: red;
+	font: 12px Montserrat, sans-serif;
 }
 
 .float-disable{
@@ -120,4 +129,36 @@ color: #FFF;
    vertical-align: middle;
    margin-top: 7px;
 }
+ 
+.custom-toggler.navbar-toggler {
+    border-color: antiquewhite;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='antiquewhite' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 
+.navbar-expand-md .navbar-nav .dropdown-menu {
+    position: absolute !important;
+}
+
+#medio{
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+	 /* position:; El div será ubicado con relación a la pantalla*/
+	left:0px; /*A la derecha deje un espacio de 0px*/
+	right:0px; /*A la izquierda deje un espacio de 0px*/
+	bottom:0px; /*Abajo deje un espacio de 0px*/
+	height:50px; /*alto del div*/
+	z-index:0;
+}
+
+ #inferior1{
+	background-color: #2f2f2f; /* Black Gray */
+	color: #fff; 
+	left:0px; /*A la derecha deje un espacio de 0px*/
+	right:0px; /*A la izquierda deje un espacio de 0px*/
+	bottom:0px; /*Abajo deje un espacio de 0px*/
+	height:50px; /*alto del div*/
+	z-index:0;
+}
+ 

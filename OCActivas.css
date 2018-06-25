@@ -117,3 +117,36 @@ button{
     overflow: auto;
     border: 1px solid rgba(74, 71, 71, 0.38);
 }
+ #inferior3{
+	background-color: #2f2f2f; /* Black Gray */
+	color: #fff;
+	position: relative;/*El div será ubicado con relación a la pantalla*/
+  	top: 42%; 
+	left:0px; /*A la derecha deje un espacio de 0px*/
+	right:0px; /*A la izquierda deje un espacio de 0px*/
+	bottom:0px; /*Abajo deje un espacio de 0px*/
+	height:46px; /*alto del div*/
+	z-index:0;
+ }
+ #inferior2{
+	background-color: #2f2f2f; /* Black Gray */
+	color: #fff;
+	position: relative;/*El div será ubicado con relación a la pantalla*/
+  	top: 29%; 
+	left:0px; /*A la derecha deje un espacio de 0px*/
+	right:0px; /*A la izquierda deje un espacio de 0px*/
+	bottom:0px; /*Abajo deje un espacio de 0px*/
+	height:44px; /*alto del div*/
+	z-index:0;
+ }
+.login3 {
+  width: 300px;
+  position: relative;
+  top: 10%;
+  left: 53%;
+  margin: -50px 0px 0px -210px;
+  background: rgba(0,0,0,0.2);
+  padding: 10px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 0px rgba(0,0,0,0.3),inset 0px 1px 0px rgba(255,255,255,0.07)
+}
