@@ -25,7 +25,7 @@
 	
 	<body>
 
-		<nav class="navbar navbar-expand-md bg-6 py-1 flex-row"> 
+	<nav class="navbar navbar-expand-md bg-6 py-1 flex-row"> 
 		<a class="navbar-brand" href="#">
 			<img src="Logo.jpg" alt="Logo" style="width:40px;" class="rounded-circle">
   		</a>
@@ -54,21 +54,21 @@
 			<li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><span class="oi oi-list"></span> Consultar</a>
 				<ul class="dropdown-menu" style="background-color: #F3ABC6;">
 					<li><a class="dropdown-item" href="ConsultarP.html" style="color: antiquewhite;"><i class="fas fa-cookie-bite"></i>&nbsp;Productos</a></li>
-					<li><a class="dropdown-item" href="ConsultarOP.html" style="color: antiquewhite;"><i class="fa fa-truck"></i>&nbsp;Órdenes de Producción</a></li>
-					<li><a class="dropdown-item" href="ConsultarOC.html" style="color: antiquewhite;"><span class="oi oi-cart"></span> Órdenes de Compras</a></li>
+					<li><a class="dropdown-item" href="OPActivas.html" style="color: antiquewhite;"><i class="fa fa-truck"></i>&nbsp;Órdenes de Producción</a></li>
+					<li><a class="dropdown-item" href="OCActivas.html" style="color: antiquewhite;"><span class="oi oi-cart"></span> Órdenes de Compras</a></li>
 				</ul>
 		  </li>
 		</ul>
 		<ul class="navbar-nav ml-auto">
 				<li class="nav-item"><div class="float-disable vcenter"><input class="form-control" type="text" placeholder="Buscar..." name="search"></div></li>
-     		    <li class="nav-item"><div class="float-disable vcenter"><button class="botonbuscar" type="submit" style="color: antiquewhite;"><span class="oi oi-magnifying-glass"></span></button></div></li>
+     		    <li class="nav-item"><div class="float-disable vcenter"><a href="Buscar.html"><button class="botonbuscar" type="submit" style="color: antiquewhite;"><span class="oi oi-magnifying-glass"></span></button></a></div></li>
      		    <li class="nav-item"><div class="float-disable vcenter"><button class="botonbuscar" data-toggle="modal" data-target="#exampleModal" style="color: antiquewhite;">
 				  <span class="oi oi-comment-square"><div class="nronotificaciones">4</div></span>
 				</button>
 					</div>
 				</li>
 				
-				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><span class="oi oi-person"></span> Gabriel<span class="caret"></span></a>
+				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><span class="oi oi-person"></span> Usuario<span class="caret"></span></a>
 					<ul class="dropdown-menu" style="background-color: #F3ABC6;">
 						<li><a class="dropdown-item" href="Inicio.html" style="color: antiquewhite;"><span class="oi oi-home"></span> Inicio</a></li>
 						<li><a class="dropdown-item" href="NuevoUsuario.html" style="color: antiquewhite;"><span class="oi oi-wrench"></span> Ajustes</a></li>
@@ -83,12 +83,12 @@
 
 		<div class="bg-5"><i>Último Acceso: 23/06/2018 - 10:00 am</i></div>
 		<br>
-
+		
 		<div class="container-fluid text-center" id="tabla">
-		<div class="row">
-			<div class="col-sm-1"><p style="margin: 15px"><a href="Inicio.html"><img src="Atras.png" alt="Volver" style="width:35px;" class="img-responsive img-circle margin"></a></div>
-			<div class="col-sm-10 text-center h2">Órdenes de Producción Activas</div></p>
-		</div>
+			<div class="row">
+				<div class="col-sm-1"><p style="margin: 15px"><a href="Inicio.html"><img src="Atras.png" alt="Volver" style="width:35px;" class="img-responsive img-circle margin"></a></div>
+				<div class="col-sm-10 text-center h2">Órdenes de Producción Activas</div></p>
+			</div>
 
 		<div class="table-responsive-xl" id="fondofil">
 		<table class="table">
@@ -102,38 +102,59 @@
 			<!--Ejemplos para llenar la tabla-->
 			<tr>
 				<td>OP01</td>
-				<td>Cheesecake</td>
-				<td>1</td>
+				<td>Torta de ChocoGalleta</td>
+				<td>11</td>
 				<td>20-06</td>
-				<td><button class="boton">Ver</button>&nbsp;&nbsp;<button class="boton">Finalizar</button></td>
+				<td><a href="ConsultarOP.html"><button class="boton">Ver</button></a><button class="boton">Finalizar</button></td>
+			</tr>
+			 <tr>
+				<td>OP02</td>
+				<td>Torta de Manzana C/H</td>
+				<td> 5</td>
+				<td>14-06</td>
+				<td><a href="ConsultarOP.html"><button class="boton">Ver</button></a><button class="boton">Finalizar</button></td>
+			</tr>
+			 <tr>
+				<td>OP02</td>
+				<td>Galleton C/H</td>
+				<td> 3</td>
+				<td>14-06</td>
+				<td><a href="ConsultarOP.html"><button class="boton">Ver</button></a><button class="boton">Finalizar</button></td>
+			</tr>
+			 <tr>
+				<td>OP03</td>
+				<td>Torta de Cambur con Nueces</td>
+				<td> 6</td>
+				<td>14-06</td>
+				<td><a href="ConsultarOP.html"><button class="boton">Ver</button></a><button class="boton">Finalizar</button></td>
 			</tr>
 			 <tr>
 				<td>OP04</td>
-				<td>Torta e Webo</td>
-				<td>10</td>
+				<td>Torta de Choco-NutCapas</td>
+				<td>2</td>
 				<td>14-06</td>
-				<td><button class="boton">Ver</button>&nbsp;&nbsp;<button class="boton">Finalizar</button></td>
+				<td><a href="ConsultarOP.html"><button class="boton">Ver</button></a><button class="boton">Finalizar</button></td>
 			</tr>
-			 <tr>
+			<tr>
 				<td>OP04</td>
-				<td>Torta e Webo</td>
+				<td>Brownie de Chocolate C/H</td>
 				<td>10</td>
 				<td>14-06</td>
-				<td><button class="boton">Ver</button>&nbsp;&nbsp;<button class="boton">Finalizar</button></td>
+				<td><a href="ConsultarOP.html"><button class="boton">Ver</button></a><button class="boton">Finalizar</button></td>
 			</tr>
-			 <tr>
+			<tr>
 				<td>OP04</td>
-				<td>Torta e Webo</td>
-				<td>10</td>
+				<td>Brownie Especial Arequipe con Oreo</td>
+				<td>18</td>
 				<td>14-06</td>
-				<td><button class="boton">Ver</button>&nbsp;&nbsp;<button class="boton">Finalizar</button></td>
+				<td><a href="ConsultarOP.html"><button class="boton">Ver</button></a><button class="boton">Finalizar</button></td>
 			</tr>
-			 <tr>
+			<tr>
 				<td>OP04</td>
-				<td>Torta e Webo</td>
-				<td>10</td>
+				<td>Volcan CookieHelado</td>
+				<td> 20</td>
 				<td>14-06</td>
-				<td><button class="boton">Ver</button>&nbsp;&nbsp;<button class="boton">Finalizar</button></td>
+				<td><a href="ConsultarOP.html"><button class="boton">Ver</button></a><button class="boton">Finalizar</button></td>
 			</tr>
 			<!--Fin de los ejemplos-->
 		</table>

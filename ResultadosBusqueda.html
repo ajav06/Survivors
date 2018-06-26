@@ -1,28 +1,27 @@
-<!doctype html>
 <html>
 <head>
+	
 	<meta charset="utf-8">
-	<title>NuevoUsuario</title>
-	<link href="NuevoUsuario.css" rel="stylesheet" type="text/css">
+	<title>Resultados de la Búsqueda - Torontella Cake & Coffee</title>
+	<link href="OPActivas.css" rel="stylesheet" type="text/css">
 	<link href="Inicio.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-<style>
-
-	body {
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	
+	<style>
+	  body {
 		font: 20px Montserrat, sans-serif;
 		line-height: 1.8;
 		color: #555555;
 		background: #E3CDCD;
 	  }
-
-</style>
+   </style>
+	
 </head>
-
 	
 <body>
 	
@@ -45,7 +44,7 @@
 		  <li class="nav-item">
 			<a class="nav-link" href="Inicio.html"> <span class="oi oi-home"></span> Inicio</a>
 		  </li>
-		  <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><span class="oi oi-loop-circular"></span> Actualizar</a>
+		  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><span class="oi oi-loop-circular"></span> Actualizar</a>
 		    <ul class="dropdown-menu" style="background-color: #F3ABC6;">
 				<li><a class="dropdown-item" href="NuevoUsuario.html" style="color: antiquewhite;"><span class="oi oi-plus"></span> Incluir Usuario</a></li>
 				<li><a class="dropdown-item" href="ModificarProducto.html" style="color: antiquewhite;"><span class="oi oi-pencil"></span> Modificar Productos</a></li>
@@ -80,94 +79,109 @@
         </ul>
 	  </div>
 
-</nav>	
-
+</nav>
+	
 	<div class="bg-5"><i>Último Acceso: 23/06/2018 - 10:00 am</i></div>
-	<br>
 	
-	
+	<!-- First Container -->
 	<div class="container-fluid text-center" id="tabla">
-			<div class="row">
-				<div class="col-sm-1"><p style="margin: 15px"><a href="Inicio.html"><img src="Atras.png" alt="Volver" style="width:35px;" class="img-responsive img-circle margin"></a></div>
-				<div class="col-sm-10 text-center h2">Incluir Usuario</div></p>
+		<div class="row">
+			<div class="col-sm-1"><p style="margin: 15px"><a href="Inicio.html"><img src="Atras.png" alt="Volver" style="width:35px;" class="img-responsive img-circle margin"></a></div>
+			<div class="col-sm-10 text-center h2">Resultados de la Búsqueda
 			</div>
-	</div>
-	
-
-	<div class="col-sm-3 login2" >
-		<br>
-      <form action="Inicio.html" method="POST" class="form login">
-
-        <div class="form__field">
-          <label for="user"><i class="fas fa-user"></i></label>
-          <input id="login__username" type="text" name="username" class="form__input" placeholder="Usuario" required>
-        </div>
-
-        <div class="form__field">
-          <label for="login__password"><i class="fas fa-lock"></i></label>
-          <input id="login__password" type="password" name="password" class="form__input" placeholder="Contraseña" required>
-        </div>
+			<br><br><br>
+		</div>
+		<div class="col-sm-10 text-center h4 col-xl-12"><strong>Buscando por:</strong> 0</div>
 		
-		<div class="form__field">
-          <label for="login__password"><i class="fas fa-lock"></i></label>
-          <input id="login__password" type="password" name="password" class="form__input" placeholder="Confirme contraseña" required>
-        </div>
-		  
-	
-		<div align="center">
-			 <label class="radio-inline">
-			  <input type="radio" name="optradio"> Socia</label> 
-			<label class="radio-inline">
-			  <input type="radio" name="optradio"> Cocinera</label>
-			<label class="radio-inline">
-			  <input type="radio" name="optradio"> Encargada </label>
-	  </div>
-
-		<div class="form__field">
-          <label for="login__text"><i class="fas fa-edit"></i></label>
-          <input id="login__text" type="text" name="text" class="form__input" placeholder="Pregunta de Seguridad" required>
-        </div>
-		  
-		<div class="form__field">
-          <label for="login__respuesta"><i class="fas fa-pencil-alt"></i></label>
-          <input id="login__respuesta" type="password" name="respuesta" class="form__input" placeholder="Respuesta" required>
-        </div>
-		  
-        <div class="form__field" align="center">
-			<input type="submit" value="Incluir Usuario">
-        </div>
-
-      </form>
-
-
-    </div>
-    
-	<!-- Modal -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-			<div class="modal-content">
-			  <div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Notificaciones
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				  <span aria-hidden="true">&times;</span></h5>
-				</button>
-			  </div>
-			  <div class="list-group">
-				  <a href="#" class="list-group-item list-group-item-action" style="text-align: center;">7 órdenes de producción nuevas</a>
-				  <a href="#" class="list-group-item list-group-item-action" style="text-align: center;">4 órdenes de compra nuevas</a>
-				  <a href="#" class="list-group-item list-group-item-action" style="text-align: center;">2 OP detenidas (Materia Prima)</a>
-				  <a href="#" class="list-group-item list-group-item-action" style="text-align: center;">3 OP reanudadas (Materia Prima adquirida)</a>
-			  </div>
-			  <div class="modal-footer">
-				<button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
-		</div>
-	  </div>
+		<div class="table-responsive-xl" id="fondofil">
+		<table class="table">
+			<tr id="cabecera">
+				<td><strong>Código</strong></td>
+				<td><strong>Descripcion</strong></td>
+				<td><strong>Existencias</strong></td>
+				<td><strong>Opciones</strong></td>
+			</tr>
+						<!--Ejemplos para llenar la tabla-->
+			<tr>
+				<td>01</td>
+				<td>Chessecake</td>
+				<td>14</td>
+				<td><a href="ModificarProducto.html"><button class="boton">Modificar</button></a></td>
+			</tr>
+			 <tr>
+				<td>01</td>
+				<td>Chessecake</td>
+				<td>14</td>
+				<td><a href="ModificarProducto.html"><button class="boton">Modificar</button></a></td>
+			</tr>
+			<tr>
+				<td>01</td>
+				<td>Chessecake</td>
+				<td>14</td>
+				<td><a href="ModificarProducto.html"><button class="boton">Modificar</button></a></td>
+			</tr>
+			<tr>
+				<td>01</td>
+				<td>Chessecake</td>
+				<td>14</td>
+				<td><a href="ModificarProducto.html"><button class="boton">Modificar</button></a></td>
+			</tr>
+			<tr>
+				<td>01</td>
+				<td>Chessecake</td>
+				<td>14</td>
+				<td><a href="ModificarProducto.html"><button class="boton">Modificar</button></a></td>
+			</tr>
+			<tr>
+				<td>01</td>
+				<td>Chessecake</td>
+				<td>14</td>
+				<td><a href="ModificarProducto.html"><button class="boton">Modificar</button></a></td>
+			</tr>
+			<tr>
+				<td>01</td>
+				<td>Chessecake</td>
+				<td>14</td>
+				<td><a href="ModificarProducto.html"><button class="boton">Modificar</button></a></td>
+			</tr>
+			<tr>
+				<td>01</td>
+				<td>Chessecake</td>
+				<td>14</td>
+				<td><a href="ModificarProducto.html"><button class="boton">Modificar</button></a></td>
+			</tr>
+			<!--Fin de los ejemplos-->
+		</table>
 	</div>
-		</div>
-	<br>
-			  
-	<div id="inferior" class="text-center">
+	</div>
+	
+	
+<div id="Separador"></div>
+<!-- Footer -->
+	<div id="inferior3" class="text-center">
 		<p>Sistema Hecho Por <a href="https://www.facebook.com/EcoTecnoDCyt/">ECOTECNO</a></p> 
 	</div>
-	</body>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Notificaciones
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span></h5>
+        </button>
+      </div>
+      <div class="modal-body">
+		          <button type="button" class="list-group-item list-group-item-light" href="#">7 órdenes de producción nuevas
+				  <button type="button" class="list-group-item list-group-item-light" href="#">4 órdenes de compra nuevas
+				  <button type="button" class="list-group-item list-group-item-light" href="#">2 OP detenidas (Materia Prima)
+				  <button type="button" class="list-group-item list-group-item-light" href="#">3 OP reanudadas (Materia Prima adquirida)
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
 </html>
