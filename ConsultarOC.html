@@ -1,31 +1,31 @@
 <html>
 <head>
+	
 	<meta charset="utf-8">
-	<title>OPActivas</title>
-	<link href="OPActivas.css" rel="stylesheet" type="text/css">
+	<title>Consultar Orden de Compra - Torontella Cake & Coffee</title>
+	<link href="ConsultarOC.css" rel="stylesheet" type="text/css">
 	<link href="Inicio.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-<style>
-
-	body {
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	
+	<style>
+	  body {
 		font: 20px Montserrat, sans-serif;
 		line-height: 1.8;
 		color: #555555;
 		background: #E3CDCD;
 	  }
-
-</style>	
-
+   </style>
+	
 </head>
 	
-	<body>
-
-		<nav class="navbar navbar-expand-md bg-6 py-1 flex-row"> 
+<body>
+	
+	<nav class="navbar navbar-expand-md bg-6 py-1 flex-row"> 
 		<a class="navbar-brand" href="#">
 			<img src="Logo.jpg" alt="Logo" style="width:40px;" class="rounded-circle">
   		</a>
@@ -80,72 +80,97 @@
 	  </div>
 
 </nav>
+	
+	<div class="bg-5"><i>Último Acceso: 23/06/2018 - 10:00 am</i></div>
+	
+	<br>
+	
+	<div id="exito" class="alert alert-danger fade in" style="display:none"></div>
 
-		<div class="bg-5"><i>Último Acceso: 23/06/2018 - 10:00 am</i></div>
-		<br>
-
-		<div class="container-fluid text-center" id="tabla">
+	<!-- First Container -->
+	<div class="container-fluid text-center" id="tabla">
 		<div class="row">
 			<div class="col-sm-1"><p style="margin: 15px"><a href="Inicio.html"><img src="Atras.png" alt="Volver" style="width:35px;" class="img-responsive img-circle margin"></a></div>
-			<div class="col-sm-10 text-center h2">Órdenes de Producción Activas</div></p>
+			<div class="col-sm-10 text-center h2">Consultar Orden de Compra</div></p>
 		</div>
-
-		<div class="table-responsive-xl" id="fondofil">
-		<table class="table">
-			<tr id="cabecera">
-				<td><strong>Codigo</strong></td>
-				<td><strong>Producto</strong></td>
-				<td><strong>Cantidad</strong></td>
-				<td><strong>Fecha</strong></td>
-				<td><strong>Opciones</strong></td>
-			</tr>
-			<!--Ejemplos para llenar la tabla-->
-			<tr>
-				<td>OP01</td>
-				<td>Cheesecake</td>
-				<td>1</td>
-				<td>20-06</td>
-				<td><button class="boton">Ver</button>&nbsp;&nbsp;<button class="boton">Finalizar</button></td>
-			</tr>
-			 <tr>
-				<td>OP04</td>
-				<td>Torta e Webo</td>
-				<td>10</td>
-				<td>14-06</td>
-				<td><button class="boton">Ver</button>&nbsp;&nbsp;<button class="boton">Finalizar</button></td>
-			</tr>
-			 <tr>
-				<td>OP04</td>
-				<td>Torta e Webo</td>
-				<td>10</td>
-				<td>14-06</td>
-				<td><button class="boton">Ver</button>&nbsp;&nbsp;<button class="boton">Finalizar</button></td>
-			</tr>
-			 <tr>
-				<td>OP04</td>
-				<td>Torta e Webo</td>
-				<td>10</td>
-				<td>14-06</td>
-				<td><button class="boton">Ver</button>&nbsp;&nbsp;<button class="boton">Finalizar</button></td>
-			</tr>
-			 <tr>
-				<td>OP04</td>
-				<td>Torta e Webo</td>
-				<td>10</td>
-				<td>14-06</td>
-				<td><button class="boton">Ver</button>&nbsp;&nbsp;<button class="boton">Finalizar</button></td>
-			</tr>
-			<!--Fin de los ejemplos-->
-		</table>
+	</div>
+	
+	<div class="container-fluid bg-3 text-center">
+		<br>
+	<div class="row">
+		<div class="col-sm-3 col-sm-offset-1">
+			<label for="textfield"><div class="cajabotones">Código:</div></label>
 		</div>
-
+		<div class="col-sm-offset-0 col-sm-6">
+			<input type="text" class="form-control" name="textfield" id="textfield" placeholder="Código">
+		</div>
 	</div>
 
-		<div id="inferior1" class="text-center">
-			<p>Sistema Hecho Por <a href="https://www.facebook.com/EcoTecnoDCyt/">ECOTECNO</a></p> 
+	<div class="row">
+		<div class="col-sm-3 col-sm-offset-1">
+		  <label for="textfield2"><div class="cajabotones">Ingrediente o producto:</div></label>
 		</div>
+		<div class="col-sm-offset-0 col-sm-6">
+		  <input type="text" class="form-control" name="textfield2" id="textfield2" placeholder="Ingrediente o producto">
+		</div>
+	</div>
 
-		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="row">
+		<div class="col-sm-offset-1 col-sm-3">
+		  <label for="textfield3"><div class="cajabotones">Fecha de Inicio:</div></label>
+		</div>
+		<div class="col-sm-offset-0 col-sm-6">
+		  <input type="text" class="form-control" name="textfield3" id="textfield3" placeholder="Fecha de Inicio">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-offset-1 col-sm-3">
+		  <label for="textfield4"><div class="cajabotones">Proveedor:</div></label>
+		</div>
+		<div class="col-sm-offset-0 col-sm-6">
+		  <input type="text" class="form-control" name="textfield4" id="textfield4" placeholder="Nombre del proveedor">
+		</div>
+		<div class="col-sm-offset-0 col-sm-1">
+		  <input type="button" name="button" id="button" class="btn-lg" value="Ver Detalles">
+		</div>
+		
+	</div>
+
+	<br>
+
+	<div><input type="button" class="btn-lg" name="button" id="button" value="Finalizar Orden" data-toggle="modal" data-target="#guardarCambios"></div>
+		<br><br>
+	</div>
+	
+	<div id="inferior4" class="text-center">
+		<p>Sistema Hecho Por <a href="https://www.facebook.com/EcoTecnoDCyt/">ECOTECNO</a></p> 
+	</div>
+
+	<!-- Guardar Cambios -->
+	<div class="modal fade" id="guardarCambios" tabindex="-1" role="dialog" aria-labelledby="guardarCambios" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="guardarCambios">Confirme la finalización.
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span></h5>
+			</button>
+		  </div>
+		  <div class="modal-body">
+					  <div class="list-group-item list-group-item-light" href="#">¿Desea registrar la finalización de la orden?</textarea>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+			<a href="Inicio.html"><button type="button" class="btn btn-primary" data-dismiss="modal" onclick="bootstrap_alert('#exito','La orden ha sido finalizada exitosamente.',2000)">Sí</button></a>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	<!-- Modal -->
+	
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog" role="document">
 				<div class="modal-content">
 				  <div class="modal-header">
@@ -165,6 +190,22 @@
 			</div>
 		  </div>
 		</div>
-		</div>
-	</body>
+	</div>
+
+
+	<script>
+	//http://stackoverflow.com/questions/10082330/dynamically-create-bootstrap-alerts-box-through-javascript
+	function bootstrap_alert(elem, message, timeout) {
+	  $(elem).show().html('<div class="alert"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><span>'+message+'</span></div>');
+
+	  if (timeout || timeout === 0) {
+		setTimeout(function() { 
+		  $(elem).alert('close');
+		}, timeout);    
+	  }
+	 setTimeout(function(){window.location.href="OCActivas.html"},timeout);
+	};
+	</script>
+	
+</body>
 </html>

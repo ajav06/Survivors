@@ -60,96 +60,60 @@ color: #000000;
 	background: #EE80AA;
 }
 
-.boton{
-  border-radius: 20px 20px 20px 20px;
--moz-border-radius: 20px 20px 20px 20px;
--webkit-border-radius: 20px 20px 20px 20px;
-border: 0px solid #000000;
-color: #000000;
-  background: #ffb5a3;
-}
 
-.boton:hover{
-  border-radius: 20px 20px 20px 20px;
--moz-border-radius: 20px 20px 20px 20px;
--webkit-border-radius: 20px 20px 20px 20px;
-border: 0px solid #000000;
-color: #000000;
-  background: #EE80AA;
-}
 
 /*Tablas OPActivas*/
 table{
-    border-collapse:none;
-    width: 694px;
-    height: auto;
+    border-collapse: collapse;
+    margin: auto;
+    width: 700px;
 }
 
-td{
-    border: 1px solid rgba(74, 71, 71, 0.38);
+
+th{
     text-align: center;
+    border: 1px solid black;
+    background-color: #EE80AA;
     color: white;
 }
 
-#cabecera>td{
-    background-color: #EE80AA;
-    border-color: black;
+td{
+    border: 1px solid black;
+    text-align: center;
+    background-color: #F79285;
+    color: white;
 }
-
-/*tr:hover{
- background-color: #b44f76;
-}*/
 
 #separador{
-    height: 20px;
-}
-
-button{
-    background-color: #453f3f;
-}
-
-#fondotabla{
-    width: 700px;
-    background-color: #F79285;
     height: 400px;
-    margin: auto;
-    border-style: double;
-    overflow: auto;
-    border: 1px solid rgba(74, 71, 71, 0.38);
 }
- #inferior3{
+.col-sm-offset-18 {
+}
+
+.cajabotones {
+    font-size: 20px;
+    color: #000000;
+}
+
+#inferior4{
 	background-color: #2f2f2f; /* Black Gray */
 	color: #fff;
 	position: relative;/*El div será ubicado con relación a la pantalla*/
-  	top: 42%; 
+  	top: 33%; 
 	left:0px; /*A la derecha deje un espacio de 0px*/
 	right:0px; /*A la izquierda deje un espacio de 0px*/
 	bottom:0px; /*Abajo deje un espacio de 0px*/
-	height:46px; /*alto del div*/
+	height:50px; /*alto del div*/
 	z-index:0;
  }
- #inferior2{
+#inferior3{
 	background-color: #2f2f2f; /* Black Gray */
 	color: #fff;
 	position: relative;/*El div será ubicado con relación a la pantalla*/
-  	top: 29%; 
+  	top: 50%; 
 	left:0px; /*A la derecha deje un espacio de 0px*/
 	right:0px; /*A la izquierda deje un espacio de 0px*/
 	bottom:0px; /*Abajo deje un espacio de 0px*/
-	height:44px; /*alto del div*/
+	height:50px; /*alto del div*/
 	z-index:0;
  }
-.login3 {
-  width: 300px;
-  position: relative;
-  top: 10%;
-  left: 53%;
-  margin: -50px 0px 0px -210px;
-  background: rgba(0,0,0,0.2);
-  padding: 10px 10px;
-  border-radius: 5px;
-  box-shadow: 0px 1px 0px rgba(0,0,0,0.3),inset 0px 1px 0px rgba(255,255,255,0.07)
-}
-#fondofil{
-    background-color: #F79285;
-}
